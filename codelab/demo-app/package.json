@@ -1,0 +1,9 @@
+{
+  "name": "cotiza-seguro-gemma4",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test leak.test.mjs"
+  }
+}

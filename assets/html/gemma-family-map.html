@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #FAF9F5; display: inline-block; }
+  svg { display: block; }
+</style>
+</head>
+<body>
+<svg id="gemma-family-map" width="960" height="520" viewBox="0 0 960 520" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <marker id="arr-muted" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#475569"/></marker>
+  <marker id="arr-blue" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#1A73E8"/></marker>
+  <marker id="arr-teal" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#0D9488"/></marker>
+  <marker id="arr-amber" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#D97706"/></marker>
+  <marker id="arr-violet" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#6D28D9"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#FAF9F5"/>
+<rect x="310" y="18" width="340" height="56" rx="8" fill="#EFF6FF" stroke="#1A73E8" stroke-width="1.5"/>
+<text x="480.0" y="42.0" fill="#1A73E8" font-size="14" font-weight="700" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">Arquitectura Base Gemma 4</text>
+<text x="480.0" y="62.0" fill="#475569" font-size="11.5" font-weight="500" font-family="'JetBrains Mono', 'SF Mono', monospace" text-anchor="middle">Tokenizer 256k · RoPE · Atención Híbrida 5:1</text>
+<path d="M 480,74 V 104" fill="none" stroke="#1A73E8" stroke-width="1.6" marker-end="url(#arr-blue)"/>
+<path d="M 480,88 H 240 V 118" fill="none" stroke="#0D9488" stroke-width="1.6" marker-end="url(#arr-teal)"/>
+<path d="M 480,88 H 720 V 118" fill="none" stroke="#D97706" stroke-width="1.6" marker-end="url(#arr-amber)"/>
+<rect x="24" y="118" width="440" height="235" rx="10" fill="rgba(13,148,136,0.04)" stroke="#0D9488" stroke-opacity="0.55" stroke-width="1.3" stroke-dasharray="6,4"/>
+<rect x="42" y="108" width="225.6" height="20" rx="4" fill="#FAF9F5"/>
+<text x="154.8" y="122" fill="#0D9488" font-size="10.5" font-weight="700" font-family="'JetBrains Mono', 'SF Mono', monospace" text-anchor="middle" letter-spacing="0.08em">BORDE / ANDROID (LITE-RT LM)</text>
+<rect x="46" y="148" width="190" height="92" rx="8" fill="#F0FDFA" stroke="#0D9488" stroke-width="1.5"/>
+<text x="141.0" y="182.0" fill="#0D9488" font-size="14" font-weight="700" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">Gemma 4 E2B</text>
+<text x="141.0" y="200.0" fill="#14171F" font-size="11" font-weight="500" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">2B efectivos (5.1B tot)</text>
+<text x="141.0" y="217.0" fill="#475569" font-size="10.5" font-weight="500" font-family="'JetBrains Mono', 'SF Mono', monospace" text-anchor="middle">~1.1 GB INT4 · 128k ctx</text>
+<rect x="252" y="148" width="190" height="92" rx="8" fill="#F0FDFA" stroke="#0D9488" stroke-width="1.5"/>
+<text x="347.0" y="182.0" fill="#0D9488" font-size="14" font-weight="700" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">Gemma 4 E4B</text>
+<text x="347.0" y="200.0" fill="#14171F" font-size="11" font-weight="500" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">4B efectivos (8.0B tot)</text>
+<text x="347.0" y="217.0" fill="#475569" font-size="10.5" font-weight="500" font-family="'JetBrains Mono', 'SF Mono', monospace" text-anchor="middle">~1.6 GB INT4 · 128k ctx</text>
+<rect x="46" y="256" width="396" height="76" rx="8" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
+<text x="244.0" y="282.0" fill="#14171F" font-size="14" font-weight="700" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">Innovaciones On-Device: PLE + MatFormer</text>
+<text x="244.0" y="300.0" fill="#14171F" font-size="11" font-weight="500" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">Per-Layer Embeddings en Flash · Sub-modelos anidados</text>
+<text x="244.0" y="317.0" fill="#475569" font-size="10.5" font-weight="500" font-family="'JetBrains Mono', 'SF Mono', monospace" text-anchor="middle">Texto + Imagen + Audio nativo sin servidor</text>
+<rect x="496" y="118" width="440" height="235" rx="10" fill="rgba(217,119,6,0.04)" stroke="#D97706" stroke-opacity="0.55" stroke-width="1.3" stroke-dasharray="6,4"/>
+<rect x="514" y="108" width="182.4" height="20" rx="4" fill="#FAF9F5"/>
+<text x="605.2" y="122" fill="#D97706" font-size="10.5" font-weight="700" font-family="'JetBrains Mono', 'SF Mono', monospace" text-anchor="middle" letter-spacing="0.08em">SERVIDOR / CLOUD / GPU</text>
+<rect x="518" y="148" width="190" height="92" rx="8" fill="#FFFBEB" stroke="#D97706" stroke-width="1.5"/>
+<text x="613.0" y="182.0" fill="#D97706" font-size="14" font-weight="700" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">Gemma 4 26B A4B</text>
+<text x="613.0" y="200.0" fill="#14171F" font-size="11" font-weight="500" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">Arquitectura MoE</text>
+<text x="613.0" y="217.0" fill="#475569" font-size="10.5" font-weight="500" font-family="'JetBrains Mono', 'SF Mono', monospace" text-anchor="middle">Solo 3.8B activos/token</text>
+<rect x="724" y="148" width="190" height="92" rx="8" fill="#FFFBEB" stroke="#D97706" stroke-width="1.5"/>
+<text x="819.0" y="182.0" fill="#D97706" font-size="14" font-weight="700" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">Gemma 4 31B</text>
+<text x="819.0" y="200.0" fill="#14171F" font-size="11" font-weight="500" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">Modelo Denso</text>
+<text x="819.0" y="217.0" fill="#475569" font-size="10.5" font-weight="500" font-family="'JetBrains Mono', 'SF Mono', monospace" text-anchor="middle">Calidad frontera · 256k ctx</text>
+<rect x="518" y="256" width="396" height="76" rx="8" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
+<text x="716.0" y="282.0" fill="#14171F" font-size="14" font-weight="700" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">Despliegue en Cloud Run / Vertex AI / vLLM</text>
+<text x="716.0" y="300.0" fill="#14171F" font-size="11" font-weight="500" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">12B y 26B A4B ideales para inferencia rápida</text>
+<text x="716.0" y="317.0" fill="#475569" font-size="10.5" font-weight="500" font-family="'JetBrains Mono', 'SF Mono', monospace" text-anchor="middle">Pesos abiertos con licencia Apache 2.0</text>
+<rect x="24" y="382" width="912" height="120" rx="10" fill="rgba(109,40,217,0.03)" stroke="#6D28D9" stroke-opacity="0.55" stroke-width="1.3" stroke-dasharray="6,4"/>
+<rect x="42" y="372" width="290.40000000000003" height="20" rx="4" fill="#FAF9F5"/>
+<text x="187.20000000000002" y="386" fill="#6D28D9" font-size="10.5" font-weight="700" font-family="'JetBrains Mono', 'SF Mono', monospace" text-anchor="middle" letter-spacing="0.08em">MODELOS ESPECIALIZADOS DEL ECOSISTEMA</text>
+<rect x="46" y="408" width="276" height="76" rx="8" fill="#F5F3FF" stroke="#6D28D9" stroke-width="1.5"/>
+<text x="184.0" y="434.0" fill="#6D28D9" font-size="14" font-weight="700" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">EmbeddingGemma 2 (308M)</text>
+<text x="184.0" y="452.0" fill="#14171F" font-size="11" font-weight="500" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">Vectores Matryoshka 768 → 128d</text>
+<text x="184.0" y="469.0" fill="#475569" font-size="10.5" font-weight="500" font-family="'JetBrains Mono', 'SF Mono', monospace" text-anchor="middle">RAG 100% local con sqlite-vec</text>
+<rect x="342" y="408" width="276" height="76" rx="8" fill="#FFF1F2" stroke="#E11D48" stroke-width="1.5"/>
+<text x="480.0" y="434.0" fill="#E11D48" font-size="14" font-weight="700" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">ShieldGemma 2 (4B)</text>
+<text x="480.0" y="452.0" fill="#14171F" font-size="11" font-weight="500" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">Clasificador de seguridad</text>
+<text x="480.0" y="469.0" fill="#475569" font-size="10.5" font-weight="500" font-family="'JetBrains Mono', 'SF Mono', monospace" text-anchor="middle">Filtra entradas/salidas e imágenes</text>
+<rect x="638" y="408" width="276" height="76" rx="8" fill="#EFF6FF" stroke="#1A73E8" stroke-width="1.5"/>
+<text x="776.0" y="434.0" fill="#1A73E8" font-size="14" font-weight="700" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">FunctionGemma / PaliGemma</text>
+<text x="776.0" y="452.0" fill="#14171F" font-size="11" font-weight="500" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">Tool Calling JSON &amp; Visión</text>
+<text x="776.0" y="469.0" fill="#475569" font-size="10.5" font-weight="500" font-family="'JetBrains Mono', 'SF Mono', monospace" text-anchor="middle">Invocación determinista de APIs</text>
+</svg>
+</body>
+</html>

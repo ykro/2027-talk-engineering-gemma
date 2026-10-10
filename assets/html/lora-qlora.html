@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #FAF9F5; display: inline-block; }
+  svg { display: block; }
+</style>
+</head>
+<body>
+<svg id="lora-qlora" width="960" height="470" viewBox="0 0 960 470" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <marker id="arr-muted" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#475569"/></marker>
+  <marker id="arr-blue" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#1A73E8"/></marker>
+  <marker id="arr-teal" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#0D9488"/></marker>
+  <marker id="arr-amber" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#D97706"/></marker>
+  <marker id="arr-violet" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#6D28D9"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#FAF9F5"/>
+<rect x="24" y="24" width="560" height="422" rx="10" fill="rgba(109,40,217,0.03)" stroke="#6D28D9" stroke-opacity="0.55" stroke-width="1.3" stroke-dasharray="6,4"/>
+<rect x="42" y="14" width="470.40000000000003" height="20" rx="4" fill="#FAF9F5"/>
+<text x="277.20000000000005" y="28" fill="#6D28D9" font-size="10.5" font-weight="700" font-family="'JetBrains Mono', 'SF Mono', monospace" text-anchor="middle" letter-spacing="0.08em">ARQUITECTURA QLoRA: PESOS CONGELADOS + ADAPTADOR DE BAJO RANGO</text>
+<rect x="180" y="368" width="250" height="56" rx="8" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1.5"/>
+<text x="305.0" y="392.0" fill="#475569" font-size="14" font-weight="700" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">Activación de Entrada x</text>
+<text x="305.0" y="412.0" fill="#475569" font-size="11.5" font-weight="500" font-family="'JetBrains Mono', 'SF Mono', monospace" text-anchor="middle">Dimensión d = 3072</text>
+<path d="M 240,368 V 300" fill="none" stroke="#1A73E8" stroke-width="1.6" marker-end="url(#arr-blue)"/>
+<rect x="52" y="150" width="236" height="150" rx="8" fill="#EFF6FF" stroke="#1A73E8" stroke-width="1.5"/>
+<text x="170.0" y="213.0" fill="#1A73E8" font-size="14" font-weight="700" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">Pesos Base W₀ (Congelados)</text>
+<text x="170.0" y="231.0" fill="#14171F" font-size="11" font-weight="500" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">Gemma 4 cuantizado a 4-bit</text>
+<text x="170.0" y="248.0" fill="#475569" font-size="10.5" font-weight="500" font-family="'JetBrains Mono', 'SF Mono', monospace" text-anchor="middle">d × k (3072 × 3072) · 0% entrenable</text>
+<path d="M 170,150 V 96 H 265" fill="none" stroke="#1A73E8" stroke-width="1.6" marker-end="url(#arr-blue)"/>
+<path d="M 370,368 V 315 H 436 V 295" fill="none" stroke="#6D28D9" stroke-width="1.6" marker-end="url(#arr-violet)"/>
+<rect x="316" y="225" width="240" height="70" rx="8" fill="#F5F3FF" stroke="#6D28D9" stroke-width="1.5"/>
+<text x="436.0" y="256.0" fill="#6D28D9" font-size="14" font-weight="700" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">Matriz LoRA A (d × r)</text>
+<text x="436.0" y="276.0" fill="#475569" font-size="11.5" font-weight="500" font-family="'JetBrains Mono', 'SF Mono', monospace" text-anchor="middle">Proyección a rango r = 8 o 16</text>
+<path d="M 436,225 V 195" fill="none" stroke="#6D28D9" stroke-width="1.6" marker-end="url(#arr-violet)"/>
+<rect x="316" y="125" width="240" height="70" rx="8" fill="#F5F3FF" stroke="#6D28D9" stroke-width="1.5"/>
+<text x="436.0" y="156.0" fill="#6D28D9" font-size="14" font-weight="700" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">Matriz LoRA B (r × k)</text>
+<text x="436.0" y="176.0" fill="#475569" font-size="11.5" font-weight="500" font-family="'JetBrains Mono', 'SF Mono', monospace" text-anchor="middle">Escala α/r · &lt; 1% de parámetros</text>
+<path d="M 436,125 V 96 H 345" fill="none" stroke="#6D28D9" stroke-width="1.6" marker-end="url(#arr-violet)"/>
+<circle cx="305" cy="96" r="24" fill="#FFFBEB" stroke="#D97706" stroke-width="2"/>
+<text x="305" y="102" fill="#D97706" font-size="22" font-weight="700" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">⊕</text>
+<text x="305" y="54" fill="#14171F" font-size="14" font-weight="700" font-family="'JetBrains Mono', 'SF Mono', monospace" text-anchor="middle">Salida h = W₀·x + (B·A)·x</text>
+<rect x="608" y="24" width="328" height="422" rx="10" fill="rgba(13,148,136,0.03)" stroke="#0D9488" stroke-opacity="0.55" stroke-width="1.3" stroke-dasharray="6,4"/>
+<rect x="626" y="14" width="182.4" height="20" rx="4" fill="#FAF9F5"/>
+<text x="717.2" y="28" fill="#0D9488" font-size="10.5" font-weight="700" font-family="'JetBrains Mono', 'SF Mono', monospace" text-anchor="middle" letter-spacing="0.08em">VENTAJAS EN PRODUCCIÓN</text>
+<rect x="630" y="62" width="284" height="104" rx="8" fill="#F0FDFA" stroke="#0D9488" stroke-width="1.5"/>
+<text x="772.0" y="102.0" fill="#0D9488" font-size="14" font-weight="700" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">Entrenamiento en 1 GPU</text>
+<text x="772.0" y="120.0" fill="#14171F" font-size="11" font-weight="500" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">De ~96 GB VRAM (Full FT)</text>
+<text x="772.0" y="137.0" fill="#475569" font-size="10.5" font-weight="500" font-family="'JetBrains Mono', 'SF Mono', monospace" text-anchor="middle">a ~6 GB VRAM con QLoRA (Unsloth)</text>
+<rect x="630" y="186" width="284" height="104" rx="8" fill="#FFFBEB" stroke="#D97706" stroke-width="1.5"/>
+<text x="772.0" y="226.0" fill="#D97706" font-size="14" font-weight="700" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">Adaptadores Intercambiables</text>
+<text x="772.0" y="244.0" fill="#14171F" font-size="11" font-weight="500" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">Un solo Gemma 4 E4B en el teléfono</text>
+<text x="772.0" y="261.0" fill="#475569" font-size="10.5" font-weight="500" font-family="'JetBrains Mono', 'SF Mono', monospace" text-anchor="middle">+ múltiples LoRAs de 15-30 MB</text>
+<rect x="630" y="310" width="284" height="110" rx="8" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
+<text x="772.0" y="353.0" fill="#14171F" font-size="14" font-weight="700" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">Fusión Cero-Latencia</text>
+<text x="772.0" y="371.0" fill="#14171F" font-size="11" font-weight="500" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" text-anchor="middle">Al exportar a .litertlm puedes</text>
+<text x="772.0" y="388.0" fill="#475569" font-size="10.5" font-weight="500" font-family="'JetBrains Mono', 'SF Mono', monospace" text-anchor="middle">fusionar W = W₀ + B·A sin costo extra</text>
+</svg>
+</body>
+</html>

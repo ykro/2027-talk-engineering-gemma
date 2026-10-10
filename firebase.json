@@ -1,0 +1,15 @@
+{
+  "hosting": {
+    "site": "engineering-with-gemma-2027",
+    "public": "codelab",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "demo-app/**",
+      "Dockerfile",
+      "nginx.conf"
+    ],
+    "cleanUrls": true
+  }
+}
