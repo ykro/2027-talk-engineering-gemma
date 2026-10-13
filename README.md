@@ -7,9 +7,8 @@
 
 ## Diapositivas (Versión Más Reciente)
 
-- **Presentación en Google Slides (versión más reciente):** [https://docs.google.com/presentation/d/12S2si6YJdf9Th4jWzCmN5OXoChG__88oEP6pYJ0baYo/present](https://docs.google.com/presentation/d/12S2si6YJdf9Th4jWzCmN5OXoChG__88oEP6pYJ0baYo/present)
-- **Archivo PowerPoint en este repositorio (32 slides con notas del presentador integradas):** [`Gemma_Charla_2027.pptx`](./Gemma_Charla_2027.pptx)
-- **Guía de orador en Markdown:** [`charla-gemma-2027.md`](./charla-gemma-2027.md)
+- **Presentación en Google Slides (versión más reciente, 33 slides):** [Engineering with Gemma](https://docs.google.com/presentation/d/1JTB1pReaqPWqmGg2ydelK6VS4uPKRfswLZDCYlsB67M/edit?usp=sharing)
+- **Versión anterior (32 slides), guardada en este repositorio:** [`Gemma_Charla_2027.pptx`](./Gemma_Charla_2027.pptx) y su guía de orador [`charla-gemma-2027.md`](./charla-gemma-2027.md)
 
 ---
 
