@@ -22,10 +22,14 @@
 
 ---
 
-## Enlaces Publicados en Vivo (Taller / Codelab)
+## Taller práctico
 
-- **Codelab Interactivo (Firebase Hosting — Solo el Codelab):** [https://engineering-with-gemma-2027.web.app](https://engineering-with-gemma-2027.web.app)
-- **Aplicación Demo del Codelab en Vivo (`CotizaSeguro` corriendo con `gemma4:e2b` en Ollama sobre Cloud Run):** [https://cotiza-seguro-768634351594.us-central1.run.app](https://cotiza-seguro-768634351594.us-central1.run.app)
+El taller de esta charla es **«Split-brain en el navegador»**: Gemma 4 corre en Chrome con WebGPU, encuentra los datos personales y el código los cubre antes de pedirle ayuda a Gemini.
+
+- **Taller:** [https://codelabs-2027-z63pqhhmxq-uc.a.run.app/gemma-en-el-navegador](https://codelabs-2027-z63pqhhmxq-uc.a.run.app/gemma-en-el-navegador)
+- **Código:** [ykro/codelabs-2027](https://github.com/ykro/codelabs-2027/tree/main/gemma-en-el-navegador)
+
+La carpeta `codelab/` de este repo es el codelab anterior (CotizaSeguro). Se guarda solo como código y ya no está publicada.
 
 ---
 
